@@ -2,9 +2,10 @@ import { Category } from "./category.model"
 
 
 const createCategory = async (name: string) => {
-  return await Category.create({
+  const result =  await Category.create({
     name
   });
+  return result;
 };
 
 const getAllCategory = async () => {

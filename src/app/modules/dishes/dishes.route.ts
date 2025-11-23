@@ -1,9 +1,10 @@
 import { Router } from "express";
-import { DishesController } from "./dishes.service";
+import { fileUploader } from "../../config/cloudinary.config";
+import { DishesController } from "./dishes.controller";
 
 const router = Router();
 
-router.post("/", DishesController.createDish);
+router.post("/", fileUploader.upload.single("file"), DishesController.createDish);
 
 
 export const DishesRoutes = router;
