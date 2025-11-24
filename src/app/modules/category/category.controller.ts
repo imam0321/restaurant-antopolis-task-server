@@ -22,7 +22,7 @@ const getAllCategory = catchAsync(
     const result = await CategoryService.getAllCategory()
 
     sendResponse(res, {
-      statusCode: httpStatus.CREATED,
+      statusCode: httpStatus.OK,
       success: true,
       message: "Categories retrieve successfully",
       data: result,
