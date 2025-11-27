@@ -23,10 +23,7 @@ const createDish = async (payload: Partial<IDish> & { thumbnail?: Express.Multer
 }
 
 const getAllDishes = async (query: Record<string, string>) => {
-  const { searchTerm = "", category = "", page = "1", limit = "6" } = query;
-  const pageNumber = Number(page);
-  const limitNumber = Number(limit);
-  const skip = (pageNumber - 1) * limitNumber;
+  const { searchTerm = "", category = "",} = query;
 
   const filterQuery: Record<string, any> = {};
 
@@ -47,8 +44,6 @@ const getAllDishes = async (query: Record<string, string>) => {
   const dishes = await Dish.find(filterQuery)
     .populate("category_id")
     .sort("-createdAt")
-    .skip(skip)
-    .limit(limitNumber);
 
   return dishes;
 }

@@ -5,8 +5,8 @@ It supports creating and retrieving dishes with image uploads using Cloudinary, 
 
 ## 🔗 Live Link
 
-- **Frontend**: []()
-- **Frontend Repository**: []()
+- **Frontend**: [https://restaurant-antopolis-task-client.vercel.app](https://restaurant-antopolis-task-client.vercel.app/)
+- **Frontend Repository**: [https://github.com/imam0321/restaurant-antopolis-task-client](https://github.com/imam0321/restaurant-antopolis-task-client)
 - **Backend**: [https://restaurant-antopolis-task-server.vercel.app](https://restaurant-antopolis-task-server.vercel.app)
 
 ---

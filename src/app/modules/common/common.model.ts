@@ -1,7 +1,7 @@
 import { model, Schema } from "mongoose";
 
 export interface IFeedback {
-  id?: string;
+  _id?: string;
   name: string;
   position: string;
   description: string;
@@ -9,7 +9,7 @@ export interface IFeedback {
 }
 
 export interface IMember {
-  id?: string;
+  _id?: string;
   name: string;
   position: string;
   profile: string

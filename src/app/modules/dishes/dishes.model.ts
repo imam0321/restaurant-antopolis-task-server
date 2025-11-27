@@ -1,7 +1,7 @@
 import { model, Schema, Types } from "mongoose";
 
 export interface IDish {
-  id?: string;
+  _id?: string;
   name: string;
   category_id: Types.ObjectId;
   thumbnail: string
